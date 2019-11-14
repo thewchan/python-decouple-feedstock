@@ -1,6 +1,6 @@
 {% set name = "python-decouple" %}
-{% set version = "3.1" %}
-{% set sha256 = "1317df14b43efee4337a4aa02914bf004f010cd56d6c4bd894e6474ec8c4fe2d" %}
+{% set version = "3.2" %}
+{% set sha256 = "af87c560a0be614bac1f8609d3a1db35a02b3fa2a4b110e88eeb04e20a0d574a" %}
 
 package:
   name: {{ name|lower }}
