@@ -1,6 +1,6 @@
 {% set name = "python-decouple" %}
-{% set version = "3.2" %}
-{% set sha256 = "af87c560a0be614bac1f8609d3a1db35a02b3fa2a4b110e88eeb04e20a0d574a" %}
+{% set version = "3.3" %}
+{% set sha256 = "55c546b85b0c47a15a47a4312d451a437f7344a9be3e001660bccd93b637de95" %}
 
 package:
   name: {{ name|lower }}
@@ -30,8 +30,8 @@ about:
   home: https://github.com/henriquebastos/python-decouple/
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Strict separation of config from code.'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Strict separation of config from code.
   description: |
     Decouple helps you to organize your settings so that you can change 
     parameters without having to redeploy your app.
