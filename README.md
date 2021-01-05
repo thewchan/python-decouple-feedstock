@@ -5,9 +5,13 @@ Home: https://github.com/henriquebastos/python-decouple/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-decouple-feedstock/blob/master/LICENSE.txt)
 
 Summary: Strict separation of config from code.
+
+Development: https://github.com/henriquebastos/python-decouple/
+
+Documentation: https://github.com/henriquebastos/python-decouple/
 
 Decouple helps you to organize your settings so that you can change
 parameters without having to redeploy your app.

@@ -1,6 +1,6 @@
 {% set name = "python-decouple" %}
-{% set version = "3.3" %}
-{% set sha256 = "55c546b85b0c47a15a47a4312d451a437f7344a9be3e001660bccd93b637de95" %}
+{% set version = "3.4" %}
+{% set sha256 = "2e5adb0263a4f963b58d7407c4760a2465d464ee212d733e2a2c179e54c08d8f" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
