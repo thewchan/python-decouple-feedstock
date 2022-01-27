@@ -32,6 +32,8 @@ test:
 
 about:
   home: https://github.com/henriquebastos/python-decouple/
+  doc_url: https://github.com/henriquebastos/python-decouple/blob/master/README.rst
+  dev_url: https://github.com/henriquebastos/python-decouple/
   license: MIT
   license_family: MIT
   license_file: LICENSE
