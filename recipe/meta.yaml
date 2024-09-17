@@ -1,6 +1,5 @@
 {% set name = "python-decouple" %}
-{% set version = "3.4" %}
-{% set sha256 = "2e5adb0263a4f963b58d7407c4760a2465d464ee212d733e2a2c179e54c08d8f" %}
+{% set version = "3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,36 +7,42 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: "68e4b3fcc97e24bc90eecc514852d0bf970f4ff031f5f7a6728ddafa9afefcaf"
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
   noarch: python
+  script: {{ PYTHON }} -m pip install . -v
 
 requirements:
   host:
-    - python
-    - setuptools
+    - pip
+    - python >=3.6
+ 
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - decouple
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/henriquebastos/python-decouple/
+  doc_url: https://github.com/henriquebastos/python-decouple/blob/master/README.rst
+  dev_url: https://github.com/henriquebastos/python-decouple/
   license: MIT
   license_family: MIT
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  license_file: LICENSE
   summary: Strict separation of config from code.
   description: |
     Decouple helps you to organize your settings so that you can change 
     parameters without having to redeploy your app.
-  doc_url: https://github.com/henriquebastos/python-decouple/
-  dev_url: https://github.com/henriquebastos/python-decouple/
 
 extra:
   recipe-maintainers:
     - xmnlab
+    - thewchan
